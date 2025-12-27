@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>App Review Analyser - Analyser</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+  <body>
+  <header>
+    <h1>App Review Analyser - Analyser</h1>
+	</header>
+	<section>
+    <form method="POST" action="/analyser">
+      <label for="app_name">Enter the name of the app:</label>
+      <input type="text" id="app_name" name="app_name" required>
+      <button type="submit">Analyse</button>
+    </form>
+	</section>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>App Review Analyser - Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='results.css') }}">
+  </head>
+  <body>
+    <h1 id="text1">App Review Analyser - Results</h1>
+    <h2 id="text2">App: {{ app_name }}</h2>
+    <div class="review-container">
+      <div class="review-section">
+        <h3>Google Play Store Sentiment: {{ google_sentiment }}</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Review</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for review in google_reviews %}
+              <tr>
+                <td>{{ review }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <div class="review-section">
+        <h3>Apple App Store Sentiment: {{ apple_sentiment }}</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Review</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for review in apple_reviews %}
+              <tr>
+                <td>{{ review }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <a href="/">Home</a>
+  </body>
+</html>

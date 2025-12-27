@@ -1,0 +1,80 @@
+/* Apply styles to the body element */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+/* Apply styles to the body element */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+}
+
+
+/* Apply styles to the h1 and h2 elements */
+h1, h2 {
+  color: #333;
+  text-align: center;
+}
+
+/* Apply styles to the review container */
+.review-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+/* Apply styles to each review section */
+.review-section {
+  width: 50%;
+  margin: 0 10px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+/* Apply styles to the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Apply styles to the table headers */
+thead th {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+/* Apply styles to the table rows */
+tbody tr {
+  border-bottom: 1px solid #ccc;
+}
+
+/* Apply styles to the table cells */
+td {
+  padding: 10px;
+}
+
+/* Apply styles to the Home link */
+a {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Apply styles to the logo image */
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
